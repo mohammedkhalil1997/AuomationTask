@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/User/eclipse-workspace/AuomationTask">
+        <classes >
+            <class name="test.Config"/>
+            <class name="test.HomeTest"></class>
+            <class name="test.VeterinariansTest"></class>
+            <class name="test.OwnerTest"></class>
+            <class name="test.addOwnerTest"></class>
+            <class name="test.PetsTest"></class>
+</classes>
+    </test>
+
+
+</suite>
