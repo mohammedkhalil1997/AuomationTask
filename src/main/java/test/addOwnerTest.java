@@ -84,13 +84,12 @@ public class addOwnerTest extends TaskTestBase {
         addOwnerPage.numericErrorMsgWhenSymbol();
     }
     @Test(priority = 16)
-    public void checkIfAddNewOwner()
-    {
+    public void checkIfAddNewOwner() throws InterruptedException {
         ownerPage= homePage.goToOwner();
         addOwnerPage=ownerPage.goToAddOwner();
         ownerInformationPage=addOwnerPage.addOwner();
         petsPage=ownerInformationPage.goToAddPets();
-        ownerInformationPage=petsPage.addPets();
+        petsPage.addPets();
         ownerInformationPage.assertAddOwner();
     }
     

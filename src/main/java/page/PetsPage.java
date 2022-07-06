@@ -55,7 +55,7 @@ public class PetsPage extends TaskTestBase {
         Assert.assertTrue(newPetLabel.isDisplayed());
 
     }
-    public void addPets() {
+    public void addPets() throws InterruptedException {
         checkPetName = faker.name().firstName();
         petsName.sendKeys(checkPetName);
         checkPetBirthDate = "1997-01-01";
@@ -71,5 +71,6 @@ public class PetsPage extends TaskTestBase {
             dropdown.selectByIndex(index);
 
         }
+        Thread.sleep(2000);
 
     }}
